@@ -1,0 +1,7 @@
+<h3>Available Courses</h3>
+
+{{#each model as |course| }}
+  <li>Course: {{link-to course.title 'source.show.course.show' course.id}}</li>
+{{/each}}
+
+{{outlet}}

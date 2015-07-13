@@ -1,0 +1,6 @@
+<h1>Available Sources:</h1>
+
+{{#each model as |source| }}
+  <li>{{source.name}} - {{link-to source.name 'source.show' source.id}}</li>
+{{/each}}
+{{outlet}}

@@ -25,6 +25,13 @@ module.exports = function(environment) {
     // ENV.APP.LOG_TRANSITIONS = true;
     // ENV.APP.LOG_TRANSITIONS_INTERNAL = true;
     // ENV.APP.LOG_VIEW_LOOKUPS = true;
+
+    ENV.APP.API_HOST = 'http://fey:8000';
+    ENV.APP.API_NAMESPACE = 'api/v2';
+
+    ENV.contentSecurityPolicy = {
+      'connect-src': "'self' http://fey:8000"
+    };
   }
 
   if (environment === 'test') {
