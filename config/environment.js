@@ -30,7 +30,8 @@ module.exports = function(environment) {
     ENV.APP.API_NAMESPACE = 'api/v2';
 
     ENV.contentSecurityPolicy = {
-      'connect-src': "'self' http://fey:8000"
+      'connect-src': "'self' http://fey:8000",
+      'style-src': "'self'"
     };
   }
 
