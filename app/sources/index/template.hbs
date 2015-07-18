@@ -1,11 +1,19 @@
 <div class="row u-background-blue nav-top">
   <div class="col-sm-12">
-    <h1>Select Source of OER</h1>
+    <h1>Select a Source of OER</h1>
   </div>
 </div>
 
-{{#each model as |source| }}
-  <li>{{source.name}} - {{link-to source.name 'sources.source' source.id}}</li>
-{{/each}}
+<div class="col-sm-4 sidebar">
+  <table class="table table-striped voffset-15 table-anchors">
+    <tbody>
+      {{#each model as |source| }}
+        <tr>
+          <td>{{link-to source.name 'sources.source.courses' source.id}}</td>
+        </tr>
+      {{/each}}
+    </tbody>
+  </table>
+</div>
 
 {{outlet}}
