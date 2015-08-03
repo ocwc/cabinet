@@ -1,0 +1,12 @@
+<div class="row u-background-blue nav-top">
+  <div class="col-sm-12">
+    <h1>Categories</h1>
+  </div>
+</div>
+
+{{#each model as |category| }}
+<tr>
+  <td>{{category.name}}</td>
+</tr>
+{{/each}}
+{{outlet}}

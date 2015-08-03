@@ -15,6 +15,10 @@ Router.map(function() {
       });
     });
   });
+
+  this.route('category', { path: 'categories' }, function () {
+
+  });
 });
 
 export default Router;
